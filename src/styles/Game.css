@@ -1,0 +1,116 @@
+/* General Game Styling */
+body {
+    background-color: #1a1a2e; /* Dark, saturated background */
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling for the game canvas */
+}
+
+/* Landing Page / Connection Screen */
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(to top, #2f3640, #1a1a2e);
+}
+.game-title {
+    font-size: 3em;
+    color: #ffcc00; /* Gold color */
+    text-shadow: 2px 2px 4px #000;
+}
+.connect-btn {
+    padding: 10px 20px;
+    background-color: #008000; /* Green button */
+    color: white;
+    border: 3px solid #005000;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+/* Main Game Layout */
+.game-layout {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, Main, Footer */
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Resource Dashboard (Header) */
+.resource-dashboard-coc {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(47, 54, 64, 0.9); /* Semi-transparent dark bar */
+    border-bottom: 2px solid #3d4551;
+    z-index: 10;
+}
+.resource-item {
+    margin-left: 20px;
+    padding: 5px 10px;
+    border: 1px solid #ffcc00;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Map View and Overlay */
+.game-main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-canvas-wrapper {
+    /* Ensure the canvas fills the space */
+    max-width: 100%;
+    max-height: 100%;
+}
+.map-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+}
+
+/* Territory Card (Modal/Popup) */
+.territory-card-coc {
+    background-color: #4b4b6a; /* Dark blue/purple panel */
+    border: 5px solid #ffcc00; /* Gold frame */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.close-btn {
+    float: right;
+    background: none;
+    border: none;
+    color: #ffcc00;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Action Panel (Buttons/Forms) */
+.action-panel-coc {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #3d4551;
+    border-radius: 8px;
+}
+.attack-btn {
+    padding: 8px 15px;
+    background-color: #c0392b; /* Red for attack */
+    color: white;
+    border: 2px solid #a83228;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
